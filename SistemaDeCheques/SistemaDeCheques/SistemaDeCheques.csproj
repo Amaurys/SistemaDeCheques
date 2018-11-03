@@ -169,7 +169,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ConceptoDePagoesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProveedoresController.cs" />
+    <Compile Include="Controllers\RegistroSolicitudChequesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -192,6 +195,10 @@
     <Compile Include="Migrations\201811012159156_AddingRegistroSolicitudCheque3.cs" />
     <Compile Include="Migrations\201811012159156_AddingRegistroSolicitudCheque3.Designer.cs">
       <DependentUpon>201811012159156_AddingRegistroSolicitudCheque3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811030328299_UpdatingModels.cs" />
+    <Compile Include="Migrations\201811030328299_UpdatingModels.Designer.cs">
+      <DependentUpon>201811030328299_UpdatingModels.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ConceptoDePago.cs" />
@@ -241,6 +248,21 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\ConceptoDePagoes\Create.cshtml" />
+    <Content Include="Views\ConceptoDePagoes\Delete.cshtml" />
+    <Content Include="Views\ConceptoDePagoes\Details.cshtml" />
+    <Content Include="Views\ConceptoDePagoes\Edit.cshtml" />
+    <Content Include="Views\ConceptoDePagoes\Index.cshtml" />
+    <Content Include="Views\Proveedores\Create.cshtml" />
+    <Content Include="Views\Proveedores\Delete.cshtml" />
+    <Content Include="Views\Proveedores\Details.cshtml" />
+    <Content Include="Views\Proveedores\Edit.cshtml" />
+    <Content Include="Views\Proveedores\Index.cshtml" />
+    <Content Include="Views\RegistroSolicitudCheques\Create.cshtml" />
+    <Content Include="Views\RegistroSolicitudCheques\Delete.cshtml" />
+    <Content Include="Views\RegistroSolicitudCheques\Details.cshtml" />
+    <Content Include="Views\RegistroSolicitudCheques\Edit.cshtml" />
+    <Content Include="Views\RegistroSolicitudCheques\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -273,6 +295,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811012159156_AddingRegistroSolicitudCheque3.resx">
       <DependentUpon>201811012159156_AddingRegistroSolicitudCheque3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811030328299_UpdatingModels.resx">
+      <DependentUpon>201811030328299_UpdatingModels.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

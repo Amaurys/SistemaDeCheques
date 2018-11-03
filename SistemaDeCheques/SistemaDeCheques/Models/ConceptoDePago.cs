@@ -10,8 +10,20 @@ namespace SistemaDeCheques.Models
     public class ConceptoDePago
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Display(Name ="ID")]
         public int conceptoId { get; set; }
+        [Display(Name = "DESCRIPCIÓN")]
+        [Required]
         public string descripcion { get; set; }
-        public bool estado { get; set; }
+
+        [Display(Name = "ESTADO")]
+        [Required]
+        public ConceptoEstado estado { get; set; }
+    }
+
+    public enum ConceptoEstado
+    {
+        ACTIVO,
+        INACTIVO
     }
 }

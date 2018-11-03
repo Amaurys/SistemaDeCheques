@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace SistemaDeCheques.Models
 {
-    [DbConfigurationType(typeof(MySqlEFConfiguration))]
+    //[DbConfigurationType(typeof(MySqlEFConfiguration))]
     public class SistemaDeChequesContext:DbContext
     {
         public DbSet<ConceptoDePago> ConceptoDePagos { get; set; }
