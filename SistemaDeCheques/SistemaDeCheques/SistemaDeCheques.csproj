@@ -196,10 +196,6 @@
     <Compile Include="Migrations\201811012159156_AddingRegistroSolicitudCheque3.Designer.cs">
       <DependentUpon>201811012159156_AddingRegistroSolicitudCheque3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201811030328299_UpdatingModels.cs" />
-    <Compile Include="Migrations\201811030328299_UpdatingModels.Designer.cs">
-      <DependentUpon>201811030328299_UpdatingModels.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ConceptoDePago.cs" />
     <Compile Include="Models\Proveedores.cs" />
@@ -295,9 +291,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811012159156_AddingRegistroSolicitudCheque3.resx">
       <DependentUpon>201811012159156_AddingRegistroSolicitudCheque3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811030328299_UpdatingModels.resx">
-      <DependentUpon>201811030328299_UpdatingModels.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
