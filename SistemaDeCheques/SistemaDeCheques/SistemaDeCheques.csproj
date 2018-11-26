@@ -201,6 +201,7 @@
       <DependentUpon>201811030328299_UpdatingModels.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\MyMigrationSQLGenerator.cs" />
     <Compile Include="Models\ConceptoDePago.cs" />
     <Compile Include="Models\Proveedores.cs" />
     <Compile Include="Models\RegistroSolicitudCheque.cs" />

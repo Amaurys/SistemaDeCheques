@@ -10,6 +10,9 @@ namespace SistemaDeCheques.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
+
+            // register mysql code generator
+            SetSqlGenerator("MySql.Data.MySqlClient", new MyMigrationSQLGenerator());
         }
 
         protected override void Seed(SistemaDeCheques.Models.SistemaDeChequesContext context)
@@ -18,6 +21,6 @@ namespace SistemaDeCheques.Migrations
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
-        }
+        }   
     }
 }
