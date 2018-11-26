@@ -20,22 +20,23 @@ namespace SistemaDeCheques.Migrations
                         estado = c.Boolean(nullable: false),
                     })
                 .PrimaryKey(t => t.ProveedoresId);
-            
+
             CreateTable(
                 "dbo.RegistroSolicitudCheques",
                 c => new
-                    {
-                        NumeroSolicitud = c.Int(nullable: false, identity: true),
-                        idProveedor = c.Int(nullable: false),
-                        monto = c.Double(nullable: false),
-                        fechaRegistro = c.DateTime(nullable: false, precision: 0),
-                        estado = c.Boolean(nullable: false),
-                        CuentaBanco = c.String(unicode: false),
-                    })
+                {
+                    NumeroSolicitud = c.Int(nullable: false, identity: true),
+                    idProveedor = c.Int(nullable: false),
+                    monto = c.Double(nullable: false),
+                    fechaRegistro = c.DateTime(nullable: false, precision: 0),
+                    estado = c.Boolean(nullable: false),
+                    CuentaBanco = c.String(unicode: false),
+                })
                 .PrimaryKey(t => t.NumeroSolicitud)
-                .ForeignKey("dbo.Proveedores", t => t.idProveedor, cascadeDelete: true)
-                .Index(t => t.idProveedor);
-            
+                .ForeignKey("dbo.Proveedores", t => t.idProveedor, cascadeDelete: true);
+            Sql("CREATE index `IX_idProveedor` on `RegistroSolicitudCheques` (`idProveedor` DESC)");
+            // .Index(t => t.idProveedor);
+
         }
         
         public override void Down()
