@@ -9,11 +9,8 @@ namespace SistemaDeCheques.Migrations
     {
         public Configuration()
         {
-
-            AutomaticMigrationsEnabled = false;
-
             // register mysql code generator
-            SetSqlGenerator("MySql.Data.MySqlClient", new MyMigrationSQLGenerator());
+            //SetSqlGenerator("MySql.Data.MySqlClient", new MyMigrationSQLGenerator());
 
             AutomaticMigrationsEnabled = true;
             SetSqlGenerator("MySql.Data.MySqlClient", new MySql.Data.Entity.MySqlMigrationSqlGenerator());
