@@ -26,6 +26,9 @@
         <th>
             @Html.DisplayNameFor(model => model.CuentaCorrienteXCuentaContable)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CuentaContable)
+        </th>
         <th></th>
     </tr>
 
@@ -47,9 +50,12 @@
             @Html.DisplayFor(modelItem => item.CuentaCorrienteXCuentaContable)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.NumeroSolicitud }) |
-            @Html.ActionLink("Details", "Details", new { id=item.NumeroSolicitud }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.NumeroSolicitud })
+            @Html.DisplayFor(modelItem => item.CuentaContable)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.NumeroSolicitud }) |
+            @Html.ActionLink("Details", "Details", new { id = item.NumeroSolicitud }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.NumeroSolicitud })
         </td>
     </tr>
 }
