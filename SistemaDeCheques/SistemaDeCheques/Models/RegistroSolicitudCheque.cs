@@ -36,13 +36,19 @@ namespace SistemaDeCheques.Models
         [RegularExpression("^[0-9]*$", ErrorMessage = "Solo se aceptan numeros")]
         public string CuentaCorrienteXCuentaContable { get; set; }
 
-        
+        [Display(Name = "Cuenta Contable")]
+        [Required]
+        [RegularExpression("^[0-9]*$", ErrorMessage = "Solo se aceptan numeros")]
+        public string CuentaContable { get; set; }
+
         public virtual Proveedores Proveedores { get; set; }
     }
 
     public enum RegistroSolicitudChequeEstado
     {
-        Activo,
-        Inactivo
+        Pendiente,
+        Anulada,
+        [Display(Name = "Cheque Generado")]
+        ChequeGenerado
     }
 }

@@ -169,6 +169,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AsientoController.cs" />
     <Compile Include="Controllers\ConceptoDePagoesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProveedoresController.cs" />
@@ -260,6 +261,11 @@
     <Content Include="Views\RegistroSolicitudCheques\Details.cshtml" />
     <Content Include="Views\RegistroSolicitudCheques\Edit.cshtml" />
     <Content Include="Views\RegistroSolicitudCheques\Index.cshtml" />
+    <Content Include="Views\Asiento\Create.cshtml" />
+    <Content Include="Views\Asiento\Delete.cshtml" />
+    <Content Include="Views\Asiento\Details.cshtml" />
+    <Content Include="Views\Asiento\Edit.cshtml" />
+    <Content Include="Views\Asiento\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
