@@ -37,8 +37,8 @@ namespace SistemaDeCheques.Models
         public string CuentaCorrienteXCuentaContable { get; set; }
 
         [Display(Name = "Cuenta Contable")]
-        [Required]
-        [RegularExpression("^[a-zA-Z] + $", ErrorMessage = "Solo se aceptan letras")]
+       // [Required]
+       // [RegularExpression("^[a-zA-Z] + $", ErrorMessage = "Solo se aceptan letras")]
         public string CuentaContable { get; set; }
 
         public virtual Proveedores Proveedores { get; set; }

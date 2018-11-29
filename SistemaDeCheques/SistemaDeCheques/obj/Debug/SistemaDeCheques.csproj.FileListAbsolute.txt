@@ -105,7 +105,6 @@ C:\Users\GogoMix\Documents\GitHub\sistemadecheques\SistemaDeCheques\SistemaDeChe
 C:\Users\GogoMix\Documents\GitHub\sistemadecheques\SistemaDeCheques\SistemaDeCheques\obj\Debug\SistemaDeCheques.csproj.CopyComplete
 C:\Users\GogoMix\Documents\GitHub\sistemadecheques\SistemaDeCheques\SistemaDeCheques\obj\Debug\SistemaDeCheques.dll
 C:\Users\GogoMix\Documents\GitHub\sistemadecheques\SistemaDeCheques\SistemaDeCheques\obj\Debug\SistemaDeCheques.pdb
-<<<<<<< HEAD
 C:\Users\GogoMix\source\repos\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\GogoMix\source\repos\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\GogoMix\source\repos\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
@@ -208,7 +207,6 @@ C:\Users\GogoMix\source\repos\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques
 C:\Users\GogoMix\source\repos\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\obj\Debug\SistemaDeCheques.Migrations.AddingRegistroSolicitudCheque.resources
 C:\Users\GogoMix\source\repos\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\obj\Debug\SistemaDeCheques.Migrations.AddingRegistroSolicitudCheque2.resources
 C:\Users\GogoMix\source\repos\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\obj\Debug\SistemaDeCheques.Migrations.AddingRegistroSolicitudCheque3.resources
-C:\Users\GogoMix\source\repos\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\obj\Debug\SistemaDeCheques.Migrations.UpdatingModels.resources
 C:\Users\GogoMix\source\repos\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\obj\Debug\SistemaDeCheques.csproj.GenerateResource.cache
 C:\Users\GogoMix\source\repos\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\obj\Debug\SistemaDeCheques.csproj.CoreCompileInputs.cache
 C:\Users\GogoMix\source\repos\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\obj\Debug\SistemaDeCheques.csproj.CopyComplete
@@ -322,4 +320,3 @@ C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\obj
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\obj\Debug\SistemaDeCheques.csproj.CopyComplete
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\obj\Debug\SistemaDeCheques.dll
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\obj\Debug\SistemaDeCheques.pdb
->>>>>>> 199893789369d9264db337e0b2802e6fab36c1ce

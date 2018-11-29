@@ -266,6 +266,7 @@
     <Content Include="Views\Asiento\Details.cshtml" />
     <Content Include="Views\Asiento\Edit.cshtml" />
     <Content Include="Views\Asiento\Index.cshtml" />
+    <Content Include="Views\RegistroSolicitudCheques\GenerarCheque.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

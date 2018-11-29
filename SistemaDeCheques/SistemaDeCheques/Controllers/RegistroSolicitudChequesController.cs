@@ -120,6 +120,26 @@ namespace SistemaDeCheques.Controllers
             return RedirectToAction("Index");
         }
 
+        public ActionResult GenerarCheque()
+        {
+            var registroSolicitudCheque = db.RegistroSolicitudCheque.Include(r => r.Proveedores);
+            return View(registroSolicitudCheque.ToList());
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult GenerarCheque([Bind(Include = "NumeroSolicitud,idProveedor,monto,fechaRegistro,Estado,CuentaCorrienteXCuentaContable")] RegistroSolicitudCheque registroSolicitudCheque)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Entry(registroSolicitudCheque).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            ViewBag.idProveedor = new SelectList(db.Proveedores, "ProveedoresId", "nombre", registroSolicitudCheque.idProveedor);
+            return View(registroSolicitudCheque);
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)
