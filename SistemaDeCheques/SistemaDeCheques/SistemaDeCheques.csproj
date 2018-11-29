@@ -263,6 +263,7 @@
     <Content Include="Views\RegistroSolicitudCheques\Edit.cshtml" />
     <Content Include="Views\RegistroSolicitudCheques\Index.cshtml" />
     <Content Include="Views\Asiento\Index.cshtml" />
+    <Content Include="Views\RegistroSolicitudCheques\GenerarCheque.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
