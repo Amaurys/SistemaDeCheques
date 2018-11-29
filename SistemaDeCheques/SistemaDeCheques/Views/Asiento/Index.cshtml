@@ -1,57 +1,63 @@
-﻿@model IEnumerable<SistemaDeCheques.Models.RegistroSolicitudCheque>
+﻿@model IEnumerable<SistemaDeCheques.Models.AsientoViewModel>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Asiento Generado";
 }
 
-<h2>Index</h2>
+<h2>Asiento Generado</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
+<table class="table" style="margin-top:10px;">
+   
+    <p style="margin-top:40px;">
+        <span>
+            <b>
+                 @Html.DisplayNameFor(model => model.IdAsiento)
+            </b>
+        </span>
+        <span>
+            @Html.DisplayFor(modelItem => Model.First().IdAsiento)
+        </span>
+
+    </p>
+    <p>
+        <span>
+            <b>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </b>
+        </span>
+        <span>
+            @Html.DisplayFor(modelItem => Model.First().Descripcion)
+        </span>
+    </p>
+    
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Proveedores.nombre)
+            @Html.DisplayNameFor(model => model.DescripcionCuenta)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.monto)
+            @Html.DisplayNameFor(model => model.TipoMovimiento)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.fechaRegistro)
+            @Html.DisplayNameFor(model => model.Monto)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Estado)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CuentaCorrienteXCuentaContable)
-        </th>
-        <th></th>
+
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Proveedores.nombre)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.monto)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.fechaRegistro)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Estado)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CuentaCorrienteXCuentaContable)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.NumeroSolicitud }) |
-            @Html.ActionLink("Details", "Details", new { id=item.NumeroSolicitud }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.NumeroSolicitud })
-        </td>
-    </tr>
-}
+
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DescripcionCuenta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoMovimiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Monto)
+            </td>
+        </tr>
+    }
 
 </table>

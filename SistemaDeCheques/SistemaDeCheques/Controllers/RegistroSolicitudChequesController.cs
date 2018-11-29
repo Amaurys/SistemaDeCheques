@@ -48,7 +48,7 @@ namespace SistemaDeCheques.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "NumeroSolicitud,idProveedor,monto,fechaRegistro,Estado,CuentaCorrienteXCuentaContable")] RegistroSolicitudCheque registroSolicitudCheque)
+        public ActionResult Create([Bind(Include = "NumeroSolicitud,idProveedor,monto,fechaRegistro,Estado,CuentaCorrienteXCuentaContable,CuentaContable")] RegistroSolicitudCheque registroSolicitudCheque)
         {
             if (ModelState.IsValid)
             {
@@ -82,7 +82,7 @@ namespace SistemaDeCheques.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "NumeroSolicitud,idProveedor,monto,fechaRegistro,Estado,CuentaCorrienteXCuentaContable")] RegistroSolicitudCheque registroSolicitudCheque)
+        public ActionResult Edit([Bind(Include = "NumeroSolicitud,idProveedor,monto,fechaRegistro,Estado,CuentaCorrienteXCuentaContable, CuentaContable")] RegistroSolicitudCheque registroSolicitudCheque)
         {
             if (ModelState.IsValid)
             {

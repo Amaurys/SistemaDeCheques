@@ -199,6 +199,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\MyMigrationSQLGenerator.cs" />
+    <Compile Include="Models\AsientoViewModel.cs" />
     <Compile Include="Models\ConceptoDePago.cs" />
     <Compile Include="Models\Proveedores.cs" />
     <Compile Include="Models\RegistroSolicitudCheque.cs" />
@@ -261,10 +262,6 @@
     <Content Include="Views\RegistroSolicitudCheques\Details.cshtml" />
     <Content Include="Views\RegistroSolicitudCheques\Edit.cshtml" />
     <Content Include="Views\RegistroSolicitudCheques\Index.cshtml" />
-    <Content Include="Views\Asiento\Create.cshtml" />
-    <Content Include="Views\Asiento\Delete.cshtml" />
-    <Content Include="Views\Asiento\Details.cshtml" />
-    <Content Include="Views\Asiento\Edit.cshtml" />
     <Content Include="Views\Asiento\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>

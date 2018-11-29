@@ -10,34 +10,34 @@ namespace SistemaDeCheques.Models
     public class Proveedores
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [Display(Name ="ID")]
+        [Display(Name ="Id")]
         public int ProveedoresId { get; set; }
-        [Display(Name = "NOMBRE")]
-        [Required]
+        [Display(Name = "Nombre")]
+        [Required(ErrorMessage = "Este es un campo requerido")]
         public string nombre { get; set; }
 
-        [Display(Name = "TIPO DE PERSONA")]
-        [Required]
+        [Display(Name = "Tipo de persona")]
+        [Required(ErrorMessage = "Este es un campo requerido")]
         public ProveedoresTipoPersona TipoPerona { get; set; } 
    
-        [Display(Name ="CÉDULA O RNC")]
-        [Required]
+        [Display(Name ="Cédula o RNC")]
+        [Required(ErrorMessage = "Este es un campo requerido")]
         [MaxLength(13)]
         [MinLength(9)]
         [RegularExpression("^[0-9]*$", ErrorMessage = "SOLO SE ACEPTAN NÚMEROS")]
         public string cedulaORnc { get; set; }
-        [Display(Name ="BALANCE")]
-        [Required]
+        [Display(Name ="Balance")]
+        [Required(ErrorMessage = "Este es un campo requerido")]
         [RegularExpression(@"^\d+\.\d{0,2}$")]
         [Range(0, 99999999.99)]
         public double balance { get; set; }
-        [Display(Name = "CUENTA CONTABLE")]
-        [Required]
+        [Display(Name = "Cuenta Contable")]
+        [Required(ErrorMessage = "Este es un campo requerido")]
         [RegularExpression("^[0-9]*$", ErrorMessage = "SOLO SE ACEPTAN NÚMEROS")]
         public string cuentaProveedor { get; set; }
 
-        [Display(Name = "ESTADO")]
-        [Required]
+        [Display(Name = "Estado")]
+        [Required(ErrorMessage = "Este es un campo requerido")]
         public ProveedoresEstado Estado { get; set; }
 
         public virtual ICollection<RegistroSolicitudCheque> RegistroSolicitudCheque { get; set; }
