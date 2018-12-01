@@ -18,7 +18,7 @@ namespace SistemaDeCheques.Models
         public int idProveedor { get; set; }
         [Display(Name = "Monto")]
         [Required]
-        [RegularExpression(@"^\d+\.\d{0,2}$")]
+        [RegularExpression(@"^\-?\(?\$?\s*\-?\s*\(?(((\d{1,3}((\,\d{3})*|\d*))?(\.\d{1,4})?)|((\d{1,3}((\,\d{3})*|\d*))(\.\d{0,4})?))\)?$", ErrorMessage = "Favor de introducir un monto válido")]
         [Range(0, 99999999.99)]
         public double monto { get; set; }
         [DataType(DataType.Date)]
@@ -38,6 +38,7 @@ namespace SistemaDeCheques.Models
 
         [Display(Name = "Cuenta Contable")]
         [Required]
+        [RegularExpression("^[0-9]*$", ErrorMessage = "Solo se aceptan numeros")]
         public string CuentaContable { get; set; }
 
         public virtual Proveedores Proveedores { get; set; }

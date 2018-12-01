@@ -7,15 +7,15 @@
 <h2>Asiento Generado</h2>
 
 <table class="table" style="margin-top:10px;">
-   
+
     <p style="margin-top:40px;">
         <span>
             <b>
-                 @Html.DisplayNameFor(model => model.IdAsiento)
+                @Html.DisplayNameFor(model => model.IdAsiento)
             </b>
         </span>
         <span>
-            @Html.DisplayFor(modelItem => Model.First().IdAsiento)
+            @Html.DisplayFor(modelItem => Model.FirstOrDefault().IdAsiento)
         </span>
 
     </p>
@@ -26,10 +26,10 @@
             </b>
         </span>
         <span>
-            @Html.DisplayFor(modelItem => Model.First().Descripcion)
+            @Html.DisplayFor(modelItem => Model.FirstOrDefault().Descripcion)
         </span>
     </p>
-    
+
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.DescripcionCuenta)
@@ -61,3 +61,4 @@
     }
 
 </table>
+<label>Result:</label>  @ViewBag.Result

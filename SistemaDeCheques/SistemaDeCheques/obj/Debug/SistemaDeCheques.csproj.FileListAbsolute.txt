@@ -213,6 +213,13 @@ C:\Users\GogoMix\source\repos\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques
 C:\Users\GogoMix\source\repos\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\obj\Debug\SistemaDeCheques.dll
 C:\Users\GogoMix\source\repos\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\obj\Debug\SistemaDeCheques.pdb
 =======
+C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\VBCSCompiler.exe
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\ApplicationInsights.config
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\SistemaDeCheques.dll.config
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\SistemaDeCheques.dll
@@ -224,18 +231,13 @@ C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\csi.exe.config
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\csi.rsp
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\Microsoft.VisualBasic.Core.targets
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\Microsoft.Win32.Primitives.dll
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\System.AppContext.dll
-C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\System.Collections.Immutable.dll
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\System.Console.dll
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\System.Diagnostics.Process.dll
@@ -245,7 +247,6 @@ C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\System.IO.FileSystem.Primitives.dll
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\System.IO.Pipes.dll
-C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\System.Reflection.Metadata.dll
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\System.Security.AccessControl.dll
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\System.Security.Claims.dll
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\System.Security.Cryptography.Algorithms.dll
@@ -263,7 +264,6 @@ C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\vbc.exe
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\vbc.exe.config
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\vbc.rsp
-C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\VBCSCompiler.exe
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\Antlr3.Runtime.dll
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\EntityFramework.dll
@@ -309,7 +309,6 @@ C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\Microsoft.AI.Web.xml
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\obj\Debug\SistemaDeCheques.csprojAssemblyReference.cache
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\obj\Debug\SistemaDeCheques.Migrations.AddingConceptoDePago.resources
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\obj\Debug\SistemaDeCheques.Migrations.AddingProveedores.resources
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\obj\Debug\SistemaDeCheques.Migrations.AddingRegistroSolicitudCheque.resources
@@ -320,3 +319,4 @@ C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\obj
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\obj\Debug\SistemaDeCheques.csproj.CopyComplete
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\obj\Debug\SistemaDeCheques.dll
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\obj\Debug\SistemaDeCheques.pdb
+C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\obj\Debug\SistemaDeCheques.csprojAssemblyReference.cache

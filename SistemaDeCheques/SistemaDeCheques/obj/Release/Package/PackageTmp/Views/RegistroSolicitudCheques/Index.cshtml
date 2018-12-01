@@ -1,0 +1,63 @@
+﻿@model IEnumerable<SistemaDeCheques.Models.RegistroSolicitudCheque>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Proveedores.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.monto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaRegistro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CuentaCorrienteXCuentaContable)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CuentaContable)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Proveedores.nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.monto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaRegistro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CuentaCorrienteXCuentaContable)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CuentaContable)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.NumeroSolicitud }) |
+            @Html.ActionLink("Details", "Details", new { id = item.NumeroSolicitud }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.NumeroSolicitud })
+        </td>
+    </tr>
+}
+
+</table>

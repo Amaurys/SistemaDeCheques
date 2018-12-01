@@ -1,0 +1,66 @@
+﻿@model SistemaDeCheques.Models.Proveedores
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Proveedores</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoPerona)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoPerona)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cedulaORnc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cedulaORnc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.balance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.balance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cuentaProveedor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cuentaProveedor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProveedoresId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
