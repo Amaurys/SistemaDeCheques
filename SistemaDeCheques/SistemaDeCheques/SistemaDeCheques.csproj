@@ -201,6 +201,7 @@
     <Compile Include="Migrations\MyMigrationSQLGenerator.cs" />
     <Compile Include="Models\AsientoViewModel.cs" />
     <Compile Include="Models\ConceptoDePago.cs" />
+    <Compile Include="Models\IdValidator.cs" />
     <Compile Include="Models\Proveedores.cs" />
     <Compile Include="Models\RegistroSolicitudCheque.cs" />
     <Compile Include="Models\SistemaDeChequesContext.cs" />
@@ -220,6 +221,8 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\PublishProfiles\SistemadeChequesFinal - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\SistemadeChequesFinal - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

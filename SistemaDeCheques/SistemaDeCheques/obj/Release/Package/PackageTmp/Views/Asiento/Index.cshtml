@@ -1,0 +1,63 @@
+﻿@model IEnumerable<SistemaDeCheques.Models.AsientoViewModel>
+
+@{
+    ViewBag.Title = "Asiento Generado";
+}
+
+<h2>Asiento Generado</h2>
+
+<table class="table" style="margin-top:10px;">
+   
+    <p style="margin-top:40px;">
+        <span>
+            <b>
+                 @Html.DisplayNameFor(model => model.IdAsiento)
+            </b>
+        </span>
+        <span>
+            @Html.DisplayFor(modelItem => Model.First().IdAsiento)
+        </span>
+
+    </p>
+    <p>
+        <span>
+            <b>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </b>
+        </span>
+        <span>
+            @Html.DisplayFor(modelItem => Model.First().Descripcion)
+        </span>
+    </p>
+    
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DescripcionCuenta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoMovimiento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Monto)
+        </th>
+
+    </tr>
+
+
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DescripcionCuenta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoMovimiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Monto)
+            </td>
+        </tr>
+    }
+
+</table>

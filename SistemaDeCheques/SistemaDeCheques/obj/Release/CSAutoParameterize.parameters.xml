@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="SistemaDeChequesDB-Web.config Connection String" description="SistemaDeChequesDB Connection String used in web.config by the application to access the database." defaultValue="server=localhost;userid=root;password=root;database=SistemaDeCheques;Allow Zero Datetime=True;Convert Zero Datetime=True;persistsecurityinfo=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\LENOVO\\Documents\\SistemaDeCheques\\SistemaDeCheques\\SistemaDeCheques\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SistemaDeChequesDB']/@connectionString" />
+  </parameter>
+</parameters>
