@@ -9,13 +9,6 @@
 
 <h2>Generar Cheques</h2>
 
-
-<p>
-    @Html.ActionLink("Generar Cheques", "Create") |
-    @Html.ActionLink("Anular Cheques", "Create")
-</p>
-
-
     <table class="table">
         <tr>
             <th></th>
@@ -70,7 +63,8 @@
         }
     </table>
 
-<button id="btnGenerar">Generar Solicitud</button>
+<button id="btnGenerar">Generar Solicitud de Cheque</button> 
+<button id="btnAnular">Anular Solicitud de Cheque</button>
 
 <script>
     document.getElementById('btnGenerar').addEventListener('click', function () {
@@ -79,22 +73,49 @@
 
         for (var i = 0; i < listado.length; i++) {
             if (listado[i].checked) {
-                listadoMarcado.push(parseInt(lsitado[i].id));
+                listadoMarcado.push(parseInt(listado[i].id));
             }
         }
 
         SendToAction(listadoMarcado);
     });
-
-    function SendToAction(data) {
-        var datos = JSON.stringify(data);
+    
+    function SendToAction( data=[]) {
+        
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
             if (this.readyState === 4 && this.status === 200) {
                 //Actualizar vista
             }
         };
-        xhttp.open("Post", "RegistroSolicitudCheque/GenrrarCheques?id="+datos, true);
+        xhttp.open("Post", "GenerarCheque?id="+data, true);
+        xhttp.send();
+    }
+
+    //Anular cheque
+
+    document.getElementById('btnAnular').addEventListener('click', function () {
+        var listado = document.getElementsByClassName('check');
+        var listadoMarcado = [];
+
+        for (var i = 0; i < listado.length; i++) {
+            if (listado[i].checked) {
+                listadoMarcado.push(parseInt(listado[i].id));
+            }
+        }
+
+        SendToActionAnular(listadoMarcado);
+    });
+
+    function SendToActionAnular(data = []) {
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200) {
+                //Actualizar vista
+            }
+        };
+        xhttp.open("Post", "AnularCheque?id=" + data, true);
         xhttp.send();
     }
 </script>

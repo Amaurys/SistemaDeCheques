@@ -126,29 +126,133 @@ namespace SistemaDeCheques.Controllers
             return View(registroSolicitudCheque.ToList());
         }
 
-        /*[HttpPost]
-        public ActionResult GenerarCheque(string id)
+        [HttpPost]
+        public ActionResult GenerarCheque(Array id)
         {
-            char[] idCharArray = id.ToCharArray();
-            int[] idIntArray = null;
-            for (int i = 0; i < idCharArray.LongLength; i++)
+            //id = "4";
+            // var idCharArray = id.
+            int[] idIntArray = new int[id.Length];
+            RegistroSolicitudCheque results = new RegistroSolicitudCheque();
+            /*Esto lo hizo vanessa
+             *for (int i = 0; i < id.Length; i++)
+             {
+                 idIntArray.SetValue((int)id.GetEnumerator().MoveNext(), i);
+
+             }*/
+            for (int i = 0; i < id.Length; i++)
             {
-                idIntArray.SetValue(idCharArray[i], i);
-                
+                idIntArray.SetValue(Convert.ToInt16(id.GetValue(i)), i);
+
             }
-            //RegistroSolicitudCheque rsc = db.RegistroSolicitudCheque.FirstOrDefault(x => x.NumeroSolicitud = idIntArray[1]);
+            var enums = Enum.GetValues(typeof(RegistroSolicitudChequeEstado)).GetEnumerator();
+            RegistroSolicitudChequeEstado index = new RegistroSolicitudChequeEstado();
+            while (enums.MoveNext())
+            {
+                index = (RegistroSolicitudChequeEstado)enums.Current;
+            }
 
-            var registroEntity = 
+            /*esto lo hizo vanessa
+            foreach (var item in idIntArray)
+            {
+                var ind = idIntArray[item];
+                results = (from p in db.RegistroSolicitudCheque
+                           where p.NumeroSolicitud == ind
+                           select p).First();
 
-            /*  if (ModelState.IsValid)
-              {
-                  db.Entry(registroSolicitudCheque).State = EntityState.Modified;
-                  db.SaveChanges();
-                  return RedirectToAction("Index");
-              }
-              ViewBag.idProveedor = new SelectList(db.Proveedores, "ProveedoresId", "nombre", registroSolicitudCheque.idProveedor);*/
-            /*return View(registroSolicitudCheque);
-        }*/
+                results.Estado = index;
+
+                if (ModelState.IsValid)
+                {
+                    db.Entry(results).State = EntityState.Modified;
+                    db.SaveChanges();
+
+                }
+            }*/
+
+            for(int i = 0;i<idIntArray.Length;i++)
+            {
+                var ind = idIntArray[i];
+                results = (from p in db.RegistroSolicitudCheque
+                           where p.NumeroSolicitud == ind
+                           select p).First();
+
+                results.Estado = index;
+
+                if (ModelState.IsValid)
+                {
+                    db.Entry(results).State = EntityState.Modified;
+                    db.SaveChanges();
+
+                }
+            }
+
+
+            /* esto lo hizo amaurys
+            foreach (var item in id)
+            {
+                var ind = id[item];
+                results = (from p in db.RegistroSolicitudCheque
+                           where p.NumeroSolicitud == ind
+                           select p).First();
+
+                results.Estado = index;
+
+                if (ModelState.IsValid)
+                {
+                    db.Entry(results).State = EntityState.Modified;
+                    db.SaveChanges();
+
+                }
+
+            }*/
+
+            //var registroSolicitudCheque = db.RegistroSolicitudCheque.Include(r => r.Proveedores);
+            // ViewBag.idProveedor = new SelectList(db.Proveedores, "ProveedoresId", "nombre", registroSolicitudCheque.idProveedor);
+             return RedirectToAction("Index");
+            //return View(registroSolicitudCheque.ToList());
+            //return View("Index");
+            
+        }
+
+       
+        [HttpPost]
+        public ActionResult AnularCheque(Array id)
+        {
+            int[] idIntArray = new int[id.Length];
+            RegistroSolicitudCheque results = new RegistroSolicitudCheque();
+           
+            for (int i = 0; i < id.Length; i++) 
+            {
+                idIntArray.SetValue(Convert.ToInt16(id.GetValue(i)), i);
+
+            }
+            var enums = Enum.GetValues(typeof(RegistroSolicitudChequeEstado)).GetEnumerator();
+            RegistroSolicitudChequeEstado index = new RegistroSolicitudChequeEstado();
+
+            enums.MoveNext();
+            enums.MoveNext();
+            index = (RegistroSolicitudChequeEstado)enums.Current;
+            
+
+            for (int i = 0; i < idIntArray.Length; i++)
+            {
+                var ind = idIntArray[i];
+                results = (from p in db.RegistroSolicitudCheque
+                           where p.NumeroSolicitud == ind
+                           select p).First();
+
+                results.Estado = index;
+
+                if (ModelState.IsValid)
+                {
+                    db.Entry(results).State = EntityState.Modified;
+                    db.SaveChanges();
+
+                }
+            }
+             return RedirectToAction("Index");
+            
+        }
 
         protected override void Dispose(bool disposing)
         {

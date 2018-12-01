@@ -105,3 +105,14 @@ C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\obj
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\obj\Release\SistemaDeCheques.csproj.CopyComplete
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\obj\Release\SistemaDeCheques.dll
 C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\obj\Release\SistemaDeCheques.pdb
+C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\Microsoft.Owin.dll
+C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\Microsoft.Owin.Security.dll
+C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\Microsoft.Owin.xml
+C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\Microsoft.Owin.Security.xml
+C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\LENOVO\Documents\SistemaDeCheques\SistemaDeCheques\SistemaDeCheques\obj\Release\SistemaDeCheques.Migrations.addingLoginmodel.resources
