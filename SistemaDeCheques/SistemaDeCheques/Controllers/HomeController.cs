@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using SistemaDeCheques.Models;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace SistemaDeCheques.Controllers
 {
@@ -10,6 +13,7 @@ namespace SistemaDeCheques.Controllers
     {
         public ActionResult Index()
         {
+            var idUsuarioActual = User.Identity.GetUserId();
             return View();
         }
 

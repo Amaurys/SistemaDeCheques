@@ -13,7 +13,7 @@ namespace SistemaDeCheques.Controllers
     public class RegistroSolicitudChequesController : Controller
     {
         private SistemaDeChequesContext db = new SistemaDeChequesContext();
-
+        
         // GET: RegistroSolicitudCheques
         public ActionResult Index()
         {
@@ -126,19 +126,29 @@ namespace SistemaDeCheques.Controllers
             return View(registroSolicitudCheque.ToList());
         }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult GenerarCheque([Bind(Include = "NumeroSolicitud,idProveedor,monto,fechaRegistro,Estado,CuentaCorrienteXCuentaContable")] RegistroSolicitudCheque registroSolicitudCheque)
+        /*[HttpPost]
+        public ActionResult GenerarCheque(string id)
         {
-            if (ModelState.IsValid)
+            char[] idCharArray = id.ToCharArray();
+            int[] idIntArray = null;
+            for (int i = 0; i < idCharArray.LongLength; i++)
             {
-                db.Entry(registroSolicitudCheque).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                idIntArray.SetValue(idCharArray[i], i);
+                
             }
-            ViewBag.idProveedor = new SelectList(db.Proveedores, "ProveedoresId", "nombre", registroSolicitudCheque.idProveedor);
-            return View(registroSolicitudCheque);
-        }
+            //RegistroSolicitudCheque rsc = db.RegistroSolicitudCheque.FirstOrDefault(x => x.NumeroSolicitud = idIntArray[1]);
+
+            var registroEntity = 
+
+            /*  if (ModelState.IsValid)
+              {
+                  db.Entry(registroSolicitudCheque).State = EntityState.Modified;
+                  db.SaveChanges();
+                  return RedirectToAction("Index");
+              }
+              ViewBag.idProveedor = new SelectList(db.Proveedores, "ProveedoresId", "nombre", registroSolicitudCheque.idProveedor);*/
+            /*return View(registroSolicitudCheque);
+        }*/
 
         protected override void Dispose(bool disposing)
         {

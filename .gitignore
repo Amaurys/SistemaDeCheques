@@ -1,1 +1,5 @@
 SistemaDeCheques/.vs
+*.dll
+*.p7s
+*.pdb
+*.cache

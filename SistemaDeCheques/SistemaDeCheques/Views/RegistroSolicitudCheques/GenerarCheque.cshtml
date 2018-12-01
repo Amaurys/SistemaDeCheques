@@ -45,7 +45,7 @@
             {
                 <tr>
                     <td>
-                        @Html.CheckBox("isSelected", false, new { ID = item.NumeroSolicitud })
+                      <input class="check" id="@item.NumeroSolicitud" type="checkbox"/>
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.Proveedores.nombre)
@@ -69,4 +69,33 @@
             }
         }
     </table>
+
+<button id="btnGenerar">Generar Solicitud</button>
+
+<script>
+    document.getElementById('btnGenerar').addEventListener('click', function () {
+        var listado = document.getElementsByClassName('check');
+        var listadoMarcado = [];
+
+        for (var i = 0; i < listado.length; i++) {
+            if (listado[i].checked) {
+                listadoMarcado.push(parseInt(lsitado[i].id));
+            }
+        }
+
+        SendToAction(listadoMarcado);
+    });
+
+    function SendToAction(data) {
+        var datos = JSON.stringify(data);
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200) {
+                //Actualizar vista
+            }
+        };
+        xhttp.open("Post", "RegistroSolicitudCheque/GenrrarCheques?id="+datos, true);
+        xhttp.send();
+    }
+</script>
  
