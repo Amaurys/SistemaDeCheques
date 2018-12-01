@@ -38,6 +38,7 @@ namespace SistemaDeCheques.Models
 
         [Display(Name = "Cuenta Contable")]
         [Required]
+        [RegularExpression("^[0-9]*$", ErrorMessage = "Solo se aceptan numeros")]
         public string CuentaContable { get; set; }
 
         public virtual Proveedores Proveedores { get; set; }
